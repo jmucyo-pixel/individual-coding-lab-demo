@@ -1,10 +1,10 @@
 import csv
 
 
-def evaluate_grades(filename):
+def evaluate_grades(grades.csv):
     # --- File Reading ---
     try:
-        with open(filename, mode='r') as file:
+        with open(grades.csv, mode='r') as file:
             reader = csv.DictReader(file)
             grades = list(reader)
     except FileNotFoundError:
