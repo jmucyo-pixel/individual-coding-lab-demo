@@ -6,10 +6,10 @@ if not os.path.exists("grades.csv"):
     print("Error: grades.csv file not found.")
     exit()
 
-def evaluate_grades(grades.csv):
+def evaluate_grades(filename):
     # --- File Reading ---
     try:
-        with open(grades.csv, mode='r') as file:
+        with open(filename, mode='r') as file:
             reader = csv.DictReader(file)
             grades = list(reader)
     except FileNotFoundError:
