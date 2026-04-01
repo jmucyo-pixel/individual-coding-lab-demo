@@ -1,5 +1,10 @@
 import csv
+import os
 
+# check if file exists
+if not os.path.exists("grades.csv"):
+    print("Error: grades.csv file not found.")
+    exit()
 
 def evaluate_grades(grades.csv):
     # --- File Reading ---
